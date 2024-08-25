@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/e1428b0a9e.js" crossorigin="anonymous"></script>
+  
+  <title>Respiratory Links</title>
+</head>
+
+<body class="sm:grid sm:place-items-center sm:min-h-screen bg-yellow-50 text-neutral-900 overflow-x-hidden font-mono"> 
+
+  <div class="absolute left-1/2 -translate-x-1/2 top-0 h-full w-32 bg-indigo-400/50"></div>
+
+  <main class="relative h-screen sm:h-[800px] w-full max-w-[450px] bg-white sm:rounded-lg sm:shadow-lg sm:overflow-hidden">
+    
+    <div class="grid grid-cols-2 place-items-center gap-y-5 p-5">
+      <h1 class="font-bold text-2xl">Benji Hunt's Resportories</h1>
+      <img class="size-12 ml-auto rounded-full" src="https://shismqklzntzxworibfn.supabase.co/storage/v1/object/public/avatars/9869ee0c-d5b8-48c3-a2b9-3feb4bc6fbf7.png" alt="">
+      
+      <div class="p-3 border rounded-md flex items-center gap-3 w-full col-span-full text-gray-500 focus-within:border-indigo-500">
+        <i class="fa fa-search"></i>
+        <input id="search" class="bg-transparent w-full focus:outline-none text-neutral-900" type="search" placeholder="Search respiratory...">
+      </div>
+    </div>
+    
+    <ul id="list" class="grid sm:grid-cols-2 gap-4 place-items-start sm:place-items-stretch text-sm p-5 overflow-y-scroll min-h-[435px] max-h-[435px] sm:min-h-[550px] sm:max-h-[550px]">
+      
+      
+      
+    </ul>
+    
+    <div class="flex items-center justify-center gap-5 z-50 absolute bottom-0 left-0 w-full py-1 border-t">
+      
+      <button class="size-12 rounded-full font-bold text-lg text-indigo-500">
+        <i class="fa fa-home"></i>
+      </button>
+      
+      <button class="size-12 rounded-full font-bold text-lg text-indigo-500">
+        <i class="fa fa-folder-open"></i>
+      </button>
+      
+      <button id="show-more" class="grid place-items-center size-14 rounded-full font-bold text-lg text-white bg-indigo-500 border-2 border-indigo-500 transition-all hover:bg-white hover:text-indigo-500 -translate-y-5">
+        <i class="fa fa-plus"></i>
+      </button>
+      <button id="refresh" class="grid place-items-center size-14 rounded-full hidden font-bold text-lg text-white bg-indigo-500 border-2 border-indigo-500 transition-all -translate-y-5 hover:bg-white hover:text-indigo-500">
+        <i class="fa fa-refresh"></i>
+      </button>
+      
+      <button class="size-12 rounded-full font-bold text-lg text-indigo-500">
+        <i class="fa fa-inbox"></i>
+      </button>
+      <button class="size-12 rounded-full font-bold text-lg text-indigo-500">
+        <i class="fa fa-gear"></i>
+      </button>
+    </div>
+  </main>
+  
+  <script src="app.js"></script>
+</body>
+
+</html>
